@@ -9,19 +9,20 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f8f8f8;
-            color: #333;
+            background: url('01.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
+            overflow-x: hidden;
         }
 
         header {
-            background-color: #3d314a;
-            color: #fff;
-            padding: 30px;
+            background-color: rgba(61, 49, 74, 0.9);
+            padding: 20px;
             text-align: center;
         }
 
@@ -32,19 +33,19 @@
         }
 
         .package {
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
             margin: 20px;
             border-radius: 10px;
             text-align: center;
             width: 80%;
             max-width: 400px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease-in-out;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
         }
 
         .package:hover {
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            transform: scale(1.05);
         }
 
         h2 {
@@ -58,11 +59,11 @@
         }
 
         p {
-            color: #666;
+            color: #333;
         }
 
         footer {
-            background-color: #3d314a;
+            background-color: rgba(61, 49, 74, 0.9);
             color: #fff;
             text-align: center;
             padding: 15px;
@@ -75,7 +76,7 @@
 <body>
 
     <header>
-        <h1>Hazem mohamed Photography Packages</h1>
+        <h1>Amira Shekeban Photography Packages</h1>
     </header>
 
     <div class="package">
