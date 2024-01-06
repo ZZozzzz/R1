@@ -9,8 +9,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background: url('01.jpg') no-repeat center center fixed;
-            background-size: cover;
+            background: #121212; /* Dark background color */
             color: #fff;
             display: flex;
             flex-direction: column;
@@ -30,26 +29,38 @@
             font-size: 36px;
             margin: 0;
             letter-spacing: 1px;
+            animation: fadeInUp 1s ease-out; /* Animation for header */
         }
 
         .package {
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(33, 33, 33, 0.8); /* Darker background color */
             padding: 20px;
             margin: 20px;
             border-radius: 10px;
             text-align: center;
             width: 80%;
             max-width: 400px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Lighter box shadow */
             transition: transform 0.3s ease-in-out;
+            animation: fadeIn 1s ease-out; /* Animation for packages */
+            position: relative;
         }
 
         .package:hover {
             transform: scale(1.05);
         }
 
+        .camera-icon {
+            font-size: 30px;
+            color: #e44d26;
+            margin-right: 5px;
+        }
+
         h2 {
             color: #e44d26;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .price {
@@ -59,17 +70,40 @@
         }
 
         p {
-            color: #333;
+            color: #ddd; /* Light text color */
         }
 
         footer {
-            background-color: rgba(61, 49, 74, 0.9);
+            background-color: rgba(33, 33, 33, 0.9); /* Darker footer background color */
             color: #fff;
             text-align: center;
             padding: 15px;
             width: 100%;
             position: fixed;
             bottom: 0;
+            animation: fadeInUp 1s ease-out; /* Animation for footer */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
@@ -80,31 +114,35 @@
     </header>
 
     <div class="package">
-        <h2>Classic Moments</h2>
+        <h2><span class="camera-icon">&#128247;</span>Session Only</h2>
         <p class="price">$1500</p>
-        <p>Capture timeless memories with a professional photography session.</p>
+        <p>Up to 2 hours of photography session</p>
+        <p>Online Link for viewing and downloading</p>
     </div>
 
     <div class="package">
-        <h2>Elegance Collection</h2>
-        <p class="price">$3000</p>
-        <p>Document the beauty of your special moments with session and event coverage.</p>
+        <h2><span class="camera-icon">&#128247;</span>Half Day (Session + Party)</h2>
+        <p class="price">$2000</p>
+        <p>Up to 6-8 hours of photography session</p>
+        <p>Online Link for viewing and downloading</p>
     </div>
 
     <div class="package">
-        <h2>Timeless Love</h2>
-        <p class="price">$4500</p>
-        <p>Enjoy a full day of photography coverage to cherish every detail of your day.</p>
+        <h2><span class="camera-icon">&#128247;</span>Half Day (Pre Wedding + Session)</h2>
+        <p class="price">$2500</p>
+        <p>Up to 6-8 hours of photography session</p>
+        <p>Online Link for viewing and downloading</p>
     </div>
 
     <div class="package">
-        <h2>Premium Memories</h2>
-        <p class="price">$6500</p>
-        <p>Full-day experience with a beautifully crafted summary of your unique story.</p>
+        <h2><span class="camera-icon">&#128247;</span>Full Day</h2>
+        <p class="price">$3500</p>
+        <p>Up to 6-8 hours of photography session</p>
+        <p>Online Link for viewing and downloading</p>
     </div>
 
     <footer>
-        <p>&copy; 2024 Amira Shekeban Photography</p>
+        Your footer content goes here
     </footer>
 
 </body>
